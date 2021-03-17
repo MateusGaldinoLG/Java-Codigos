@@ -76,15 +76,7 @@ public class CalculadoraGUI {
                 JOptionPane.INFORMATION_MESSAGE,
                 icon
         );
-        /*
-        System.out.println(input1);
-        System.out.println(input2);
-        System.out.println(op);
-        System.out.println(total);
-        */
+        
         System.exit(0);
-        //400 largura ?
-        //variável da operação
-        //
     }
 }

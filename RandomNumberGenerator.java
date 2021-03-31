@@ -1,5 +1,3 @@
-package projetosimples;
-
 import java.util.Random;
 import java.util.Scanner;
 
@@ -11,16 +9,16 @@ public class RandomNumberGenerator {
 		int numeroMinimo, numeroMaximo;
 		int intervalo;
 		
-		System.out.println("Escreva o limite mÌnimo: ");
+		System.out.println("Escreva o limite m√≠nimo: ");
 		numeroMinimo = s.nextInt();
-		System.out.println("Escreva o limite m·ximo: ");
+		System.out.println("Escreva o limite m√°ximo: ");
 		numeroMaximo = s.nextInt();
 		
 		while (numeroMinimo == numeroMaximo || (numeroMinimo < 0 || numeroMaximo <0) || numeroMinimo > numeroMaximo) {
-			System.out.println("O intervalo que vocÍ digitou est· incorreto, tente novamente");
-			System.out.println("Escreva o limite mÌnimo: ");
+			System.out.println("O intervalo que voc√™ digitou est√° incorreto, tente novamente");
+			System.out.println("Escreva o limite m√≠nimo: ");
 			numeroMinimo = s.nextInt();
-			System.out.println("Escreva o limite m·ximo: ");
+			System.out.println("Escreva o limite m√°ximo: ");
 			numeroMaximo = s.nextInt();
 		}
 		
@@ -35,7 +33,7 @@ public class RandomNumberGenerator {
 			numeroFinal += 1;
 		}
 		
-		System.out.println("O numero aleatÛrio È: "+numeroFinal);
+		System.out.println("O numero aleat√≥rio √©: "+numeroFinal);
 		s.close();
 		
 	}

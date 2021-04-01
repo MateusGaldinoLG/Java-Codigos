@@ -4,14 +4,14 @@ Essa calculadora usa o mesmo sistema de escolha da primeira calculadora, mas usa
 
 ![primeiro input](/imgs/calculadoraGUI1.png)  
 
-1. É usado um segundo JOptionPane do tipo *showInputDialog* para input do segundo número:  
+2. É usado um segundo JOptionPane do tipo *showInputDialog* para input do segundo número:  
 
 ![segundo input](/imgs/calculadoraGUI2.png)  
 
-1. É escolhida uma operação a partir de um JOptionPane do tipo *showInputDialog*:  
+3. É escolhida uma operação a partir de um JOptionPane do tipo *showInputDialog*:  
 
 ![operações](/imgs/calculadoraGUI3.png) 
 
-1. É mostrado um output com o valor calculado, a partir de um JOptionPane *showMessageDialog*:  
+4. É mostrado um output com o valor calculado, a partir de um JOptionPane *showMessageDialog*:  
 
 ![output resultado](/imgs/calculadoraGUI4.png)

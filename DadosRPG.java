@@ -1,5 +1,3 @@
-package projetosimples;
-
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
@@ -12,6 +10,7 @@ public class DadosRPG {
 		int soma = 0;
 		char escolha = 'n';
 		
+		//Dice faces
 		ArrayList<Integer> faces = new ArrayList<Integer>();
 		faces.add(20);
 		faces.add(12);
@@ -21,25 +20,26 @@ public class DadosRPG {
 		faces.add(4);
 		
 		
-		System.out.println("Digite o número de dados: ");
+		System.out.println("Digite o nÃºmero de dados: ");
 		numDeDados = input.nextInt();
 		
 		while (escolha != 's') {
-			System.out.println("Digite a quantidade de faces: \n(quantidades possíveis: 4, 6, 8, 10, 12, 20) ");
+			System.out.println("Digite a quantidade de faces: \n(quantidades possÃ­veis: 4, 6, 8, 10, 12, 20) ");
 			faceEscolhida = input.nextInt();
 			if(faces.contains(faceEscolhida)) {
 				escolha = 's';
 			}
 			else {
-				System.out.println("Número de faces incorreto, escreva novamente.");
+				System.out.println("NÃºmero de faces incorreto, escreva novamente.");
 			}
 		}
 		
-		System.out.println("Digite o acrescimo (se não houver, digite 0):");
+		System.out.println("Digite o acrescimo (se nÃ£o houver, digite 0):");
 		acrescimo = input.nextInt();
 		
 		int[] rolagens = new int[numDeDados];
 		
+		//sum all the dice results
 		for(int i = 0; i < numDeDados; ++i) {
 			rolagens[i] = Rolagem(faceEscolhida);
 			soma += rolagens[i];
@@ -56,6 +56,7 @@ public class DadosRPG {
 		
 	}
 	
+	//method to roll the number
 	public static int Rolagem(int y) {
 		Random random = new Random();
 		int resultadoFace = 1 + random.nextInt(y);

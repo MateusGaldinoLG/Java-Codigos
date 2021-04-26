@@ -5,3 +5,6 @@ Randomizer is a project using the random object from the Java.util library. It u
 3. Random hexadecimal color generator 
 
 More random things will keep coming as i project them
+
+## Tester
+The tester.java file is a simple example of how to use the Randomizer object to do some projects. It is a simple example and can be excluded if someone wants to use the randomizer in other projects

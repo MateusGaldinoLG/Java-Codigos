@@ -14,3 +14,6 @@ Allows the user to choose a minimum and a maximum value and show to them a rando
 1. RPG Dice  
 Permite o usuáro a escolher o número de dados, o valor da face (dentre as possíveis) e o acrescimo. Ele rola o dado logo em seguida e mostra o resultado  
 Allows the user to choose the number of dice, the value of the face (between the possible faces) and the increment. It rolls the dice shortly thereafter and shows its result. 
+1. Randomizer  
+Usa o objeto java.util.random para criar funções de aleatoriedade como: geradores de código hexadecimal, gerador de array e gerador de numero aleatorio.  
+Utilizes the java.util.random object to create randomness functions like: hexadecimal colors, array of numbers or random number.  

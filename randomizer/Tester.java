@@ -17,17 +17,6 @@ public class Tester {
 		System.out.println("Escolha um deles:");
 		escolha = s.nextLine();
 		
-		/*
-		while(minimo == maximo || (minimo < 0 || maximo <0) || minimo > maximo) {
-			System.out.println("Digite o valor minimo: ");
-			minimo = s.nextInt();
-			System.out.println("Digite o valor maximo");
-			maximo = s.nextInt();
-			if(minimo >= maximo) {
-				System.out.println("O valor maximo deve ser maior que o valor minomo. Digite novamente: ");
-			}
-		}
-		*/
 		if(escolha.equals("RNG")) {
 			RNG();
 		}
@@ -55,7 +44,7 @@ public class Tester {
 				System.out.println("O valor maximo deve ser maior que o valor minomo. Digite novamente: ");
 			}
 		}
-		System.out.println("Seu número é" + random.randomNumber(minimo, maximo));
+		System.out.println("Seu nÃºmero Ã©" + random.randomNumber(minimo, maximo));
 	}
 	
 	public static void RRG() {
@@ -67,7 +56,7 @@ public class Tester {
 			minimo = s.nextInt();
 			System.out.println("Digite o valor maximo");
 			maximo = s.nextInt();
-			System.out.println("Digite o tamanho da coluna que você quer gerar: ");
+			System.out.println("Digite o tamanho da coluna que vocÃª quer gerar: ");
 			tamanho = s.nextInt();
 			if(minimo >= maximo) {
 				System.out.println("O valor maximo deve ser maior que o valor minomo. Digite novamente: ");
@@ -77,7 +66,7 @@ public class Tester {
 			}
 		}while(minimo == maximo || (minimo < 0 || maximo <0) || minimo > maximo || tamanho <= 0);
 		
-		System.out.println("Sua coluna é " + random.randomArray(minimo, maximo, tamanho));
+		System.out.println("Sua coluna Ã© " + random.randomArray(minimo, maximo, tamanho));
 	}
 	
 }
